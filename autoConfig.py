@@ -305,13 +305,13 @@ class BasicTestCase(unittest.TestCase):
         content['mobile'] = '+86.189700485332'
         self.assertEqual(register_params_check(content), ("ok", True))
 
-     # email config
+     # email config 
     def test_register_params_check_ok2(self):
-        content = {}
+        content = {'盐南高新区行政审批局'}
         content['username'] = 'wahaha'
         content['password'] = 'abcd1234'
         content['nickname'] = 'wangluli'
-        content['domain'] = 'ycgsj.gov.cn'
+        content['domain'] = 'http://ycsp.yancheng.gov.cn/'
         content['email'] = 'p3rfectVICT1M@163.com'
         content['mobile'] = '+86.18661209709'
         self.assertEqual(register_params_check(content), ("ok", True))
