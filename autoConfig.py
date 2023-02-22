@@ -307,7 +307,7 @@ class BasicTestCase(unittest.TestCase):
 
      # email config 
     def test_register_params_check_ok2(self):
-        content = {'盐南高新区行政审批局'}
+        content = {'盐城市电子政务办公室'}
         content['username'] = 'wahaha'
         content['password'] = 'abcd1234'
         content['nickname'] = 'wangluli'
