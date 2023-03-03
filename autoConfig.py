@@ -307,11 +307,11 @@ class BasicTestCase(unittest.TestCase):
 
      # email config 
     def test_register_params_check_ok2(self):
-        content = {'滨海县人民政府行政审批局'}
+        content = {'盐南高新区政务服务中心'}
         content['username'] = 'wahaha'
         content['password'] = 'abcd1234'
         content['nickname'] = 'wangluli'
-        content['domain'] = 'http://binhai.yancheng.gov.cn/'
+        content['domain'] = 'http://yccnxq.jszwfw.gov.cn/'
         content['email'] = 'p3rfectVICT1M@163.com'
         content['mobile'] = '+86.18661209709'
         self.assertEqual(register_params_check(content), ("ok", True))
